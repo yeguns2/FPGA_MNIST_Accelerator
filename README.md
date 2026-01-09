@@ -168,34 +168,36 @@ At a high level, the system consists of:
 ---
 
 ## Repository Structure
+
+```text
 .
 ├── mnist_demo.gif
 ├── docs/
-│ ├── block_diagram.png
-│ └── demo_screenshot.png
+│   ├── block_diagram.png
+│   └── demo_screenshot.png
 ├── firmware/
-│ └── src/
-│ ├── host.c
-│ ├── mnist_sw_infer.c
-│ ├── mnist_sw_infer.h
-│ └── weights.h
+│   └── src/
+│       ├── host.c
+│       ├── mnist_sw_infer.c
+│       ├── mnist_sw_infer.h
+│       └── weights.h
 ├── host_app/
-│ ├── app.py
-│ └── templates/
-│ └── index.html
+│   ├── app.py
+│   └── templates/
+│       └── index.html
 ├── hw/
-│ └── src/
-│ └── ip_repo/
-│ └── Accelerator_1_0/
-│ └── src/
-│ ├── Accelerator_v1_0.sv
-│ ├── bramReader.sv
-│ ├── ComputeEngine.sv
-│ └── LineBuffer.sv
+│   └── src/
+│       └── ip_repo/
+│           └── Accelerator_1_0/
+│               └── src/
+│                   ├── Accelerator_v1_0.sv
+│                   ├── bramReader.sv
+│                   ├── ComputeEngine.sv
+│                   └── LineBuffer.sv
 └── model/
-├── mnist_train.py
-├── export_weight.py
-└── mnist_smallcnn_state_dict.pt
+    ├── mnist_train.py
+    ├── export_weight.py
+    └── mnist_smallcnn_state_dict.pt
 
 ---
 
